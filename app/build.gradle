@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.movies'
+    namespace 'com.movies'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.example.movies"
+        applicationId "com.movies"
         minSdk 33
         targetSdk 34
         versionCode 1
@@ -29,8 +29,11 @@ android {
 }
 
 dependencies {
-
+    implementation 'com.github.bumptech.glide:glide:4.15.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.15.1'
     implementation libs.appcompat
+    implementation 'com.android.volley:volley:1.2.1'
     implementation libs.material
     implementation libs.activity
     implementation libs.constraintlayout
